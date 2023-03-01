@@ -300,7 +300,7 @@
 }
 
 .project__banner {
-    background: url(/images/project-bg.svg) top left/contain no-repeat;
+    background: url(../images/project-bg.svg) top left/contain no-repeat;
     width: 595px;
     height: 614px;
     position: relative;
@@ -387,7 +387,7 @@
 }
 
 .btn-arrow {
-    background: url(/images/btn-arrow.svg) no-repeat;
+    background: url(../images/btn-arrow.svg) no-repeat;
     width: 58px;
     height: 18px;
     -webkit-transition: 0.3s;
@@ -409,9 +409,9 @@
 /************/
 .team {
     max-width: 1920px;
-    background: url(/images/team-leaf-bg.png) no-repeat #F5F5F5;
-    background: url(/images/team-leaf-bg.png) 0 0 no-repeat, -o-radial-gradient(center, farthest-side, transparent 0%, rgba(245, 245, 245, 0.4) 40%, rgba(245, 245, 245, 0.56) 60%, rgba(245, 245, 245, 1) 90%), url(/images/team-img-bg.jpg) 50% 50% / cover;
-    background: url(/images/team-leaf-bg.png) 0 0 no-repeat, radial-gradient(farthest-side at center, transparent 0%, rgba(245, 245, 245, 0.4) 40%, rgba(245, 245, 245, 0.56) 60%, rgba(245, 245, 245, 1) 90%), url(/images/team-img-bg.jpg) 50% 50% / cover;
+    background: url(../images/team-leaf-bg.png) no-repeat #F5F5F5;
+    background: url(../images/team-leaf-bg.png) 0 0 no-repeat, -o-radial-gradient(center, farthest-side, transparent 0%, rgba(245, 245, 245, 0.4) 40%, rgba(245, 245, 245, 0.56) 60%, rgba(245, 245, 245, 1) 90%), url(../images/team-img-bg.jpg) 50% 50% / cover;
+    background: url(../images/team-leaf-bg.png) 0 0 no-repeat, radial-gradient(farthest-side at center, transparent 0%, rgba(245, 245, 245, 0.4) 40%, rgba(245, 245, 245, 0.56) 60%, rgba(245, 245, 245, 1) 90%), url(../images/team-img-bg.jpg) 50% 50% / cover;
     margin: 0 auto;
 }
 
