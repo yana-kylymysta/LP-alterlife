@@ -169,8 +169,7 @@
 }
 
 /************/
-.help,
-.footer {
+.help{
     background: url(../images/background.jpg);
 }
 
@@ -409,9 +408,9 @@
 /************/
 .team {
     max-width: 1920px;
-    background: url(../images/team-leaf-bg.png) no-repeat #F5F5F5;
-    background: url(../images/team-leaf-bg.png) 0 0 no-repeat, -o-radial-gradient(center, farthest-side, transparent 0%, rgba(245, 245, 245, 0.4) 40%, rgba(245, 245, 245, 0.56) 60%, rgba(245, 245, 245, 1) 90%), url(../images/team-img-bg.jpg) 50% 50% / cover;
-    background: url(../images/team-leaf-bg.png) 0 0 no-repeat, radial-gradient(farthest-side at center, transparent 0%, rgba(245, 245, 245, 0.4) 40%, rgba(245, 245, 245, 0.56) 60%, rgba(245, 245, 245, 1) 90%), url(../images/team-img-bg.jpg) 50% 50% / cover;
+    background: url(../images/team-leaf-bg.png) no-repeat #fff;
+    background: url(../images/team-leaf-bg.png) 0 0 no-repeat, -o-radial-gradient(center, farthest-side, transparent 0%, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.56) 60%, rgba(255, 255, 255, 1) 90%), url(../images/team-img-bg.jpg) 50% 50% / cover;
+    background: url(../images/team-leaf-bg.png) 0 0 no-repeat, radial-gradient(farthest-side at center, transparent 0%, rgba(255, 255, 255, 0.4) 40%, rgba(255, 255, 255, 0.56) 60%, rgba(255, 255, 255, 1) 90%), url(../images/team-img-bg.jpg) 50% 50% / cover;
     margin: 0 auto;
 }
 
@@ -469,19 +468,27 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    min-width: 206px;
+    width: 140px;
+    height: 140px;
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
 }
 
+.team__main-row .item {
+    width: 273px;
+    height: 275px;
+}
+
 .item__img {
     width: 100%;
+    height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
     margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 .item__name {

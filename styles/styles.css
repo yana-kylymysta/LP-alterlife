@@ -73,7 +73,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     line-height: 1.2;
-    background-color: #F5F5F5;
+    background-color: #fff;
     color: #000000;
     padding-top: 50px;
 }
@@ -197,8 +197,10 @@ footer {
     background: #FFD500;
     color: #005BBB;
 }
-
-.footer * {
+.footer {
+    background: url(/images/background.jpg);
+}
+.footer p, .footer label {
     font-size: 0.9rem;
 }
 
@@ -236,8 +238,12 @@ footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 45px;
-    height: 45px;
+    width: 44px;
+    height: 44px;
+}
+
+.footer__icon img{
+    width: 100%;
 }
 
 .footer__subscription {
@@ -298,8 +304,8 @@ footer {
 @-webkit-keyframes tracking-in-expand-fwd-bottom {
     0% {
         letter-spacing: -0.5em;
-        -webkit-transform: translateZ(-500px) translateY(500px);
-        transform: translateZ(-500px) translateY(500px);
+        -webkit-transform: translateZ(-100px) translateY(500px);
+        transform: translateZ(-100px) translateY(500px);
         opacity: 0;
     }
 
@@ -317,8 +323,8 @@ footer {
 @keyframes tracking-in-expand-fwd-bottom {
     0% {
         letter-spacing: -0.5em;
-        -webkit-transform: translateZ(-500px) translateY(500px);
-        transform: translateZ(-500px) translateY(500px);
+        -webkit-transform: translateZ(-100px) translateY(500px);
+        transform: translateZ(-100px) translateY(500px);
         opacity: 0;
     }
 

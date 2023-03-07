@@ -1,0 +1,98 @@
+.means__container {
+    padding: 7rem 0 40px 0;
+}
+
+.means__title {
+    margin-bottom: 5rem;
+}
+
+.mean {
+    border: 1px solid #D8CFCF;
+    border-radius: 0.5rem;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+   
+}
+
+.mean::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.5rem;
+    height: 100%;
+    background: #5C9625;
+    border-radius: 0.5rem 0px 0px 0.5rem;
+}
+
+.mean__class {
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 0.8rem;
+}
+
+.mean__subclass {
+    margin: 10px 0 0 3rem;
+}
+
+.mean__section {
+    margin: 10px 0 0 6rem;
+}
+
+.mean__dropdowm {
+    margin: 10px 0 0 9rem;
+    cursor: pointer;
+}
+
+.mean__dropdowm span {
+    text-decoration: underline;
+}
+
+.mean__item {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 0 0 0 12rem;
+}
+
+.mean__img {
+    width: 100%;
+    max-width: 150px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mean__title {
+    color: #000
+}
+
+.mean__list, 
+.mean__item {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -o-transition: height  0.5s;
+    transition: height 0.5s;
+}
+
+.mean.active .mean__list {
+    height: 100%;
+}
+.mean__item.active {
+  height: 100px;
+}
+
+.mean__breadcrumbs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.mean__breadcrumb {
+    font-size: 0.7rem;
+    color: #5F5B5B;
+}
