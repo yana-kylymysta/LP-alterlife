@@ -72,18 +72,19 @@
 .mean__list, 
 .mean__item {
     position: relative;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
-    -webkit-transition: height 0.5s;
-    -o-transition: height  0.5s;
-    transition: height 0.5s;
+    -webkit-transition: 0.5s;
+    -o-transition:  0.5s;
+    transition:  0.5s;
 }
 
 .mean.active .mean__list {
-    height: 100%;
+    max-height: 100%;
 }
+
 .mean__item.active {
-  height: 100px;
+    max-height: 100px;
 }
 
 .mean__breadcrumbs {
@@ -95,4 +96,14 @@
 .mean__breadcrumb {
     font-size: 0.7rem;
     color: #5F5B5B;
+}
+
+@media screen and (max-width: 768px) {   
+        .mean__class,
+        .mean__subclass,
+        .mean__section,
+        .mean__dropdowm,
+        .mean__item {
+            margin-left: 0;
+        }
 }

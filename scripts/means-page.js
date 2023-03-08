@@ -1,4 +1,5 @@
     const block = document.querySelector('.means__block');
+    const loader = '<div class="loader__wrapper"><div class="loader"></div></div>';
    
     const getData = async () => {
         const result = await fetch('https://docs.google.com/spreadsheets/d/1nQuxFbJVp5OE0y6WViLFtjKCyOGZURUyuQnLaQ_EALw/htmlview')
@@ -60,6 +61,7 @@
     }
 
     const createPage = async () => {
+        block.innerHTML = loader;
 
         const resultData = await getData();
 
