@@ -10,14 +10,18 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="header__container container">
             <nav>
+                <div class="menu__icon-mob">
+                    <span></span>
+                </div>
                 <ul class="menu">
                     <li class="menu__item"><a href="#">Головна</a></li>
-                    <li class="menu__item"><a href="#">Про нас</a></li>
-                    <li class="menu__item"><a href="#">Проєкти</a></li>
+                    <li class="menu__item"><a href="#about">Про нас</a></li>
+                    <li class="menu__item"><a href="#project">Проєкти</a></li>
                     <li class="menu__item"><a href="#">Новини</a></li>
-                    <li class="menu__item"><a href="#">Види послуг</a></li>
+                    <li class="menu__item"><a href="#help">Види послуг</a></li>
+                    <li class="menu__item"><a href="#">Документи</a></li>
                     <li class="menu__item"><a href="#">Контакти</a></li>
                 </ul>
             </nav>
@@ -36,7 +40,9 @@
         <section class="main">
             <div class="container">
                 <div class="main__banner">
-                    <img class="main__img tracking-in-expand-fwd-bottom" src="./images/main__img.png" alt="Обмежені можливості мають альтернативну перспективу">
+                    <div class="main__img">
+                        <img class="main__img tracking-in-expand-fwd-bottom" src="./images/main__img.png" alt="Обмежені можливості мають альтернативну перспективу">
+                    </div>
                     <h1 class="main__title tracking-in-expand-fwd-bottom">
                     обмежені<br>можливості<br>
                     <span>мають<br>
@@ -45,7 +51,7 @@
                 </div>
            </div>
         </section>
-        <section class="about scroll-opacity">
+        <section class="about scroll-opacity" id="about">
             <div class="container">
                 <h2 class="about__title title">Хто ми</h2>
                 <div class="about__content">
@@ -103,41 +109,41 @@
                 </div>
             </div>
         </section>
-        <section class="means scroll-opacity">
+        <section class="devices scroll-opacity">
             <div class="container">
-                <h2 class="means__title title text-right">ДОПОМІЖНІ ЗАСОБИ ФУНКЦІОНУВАННЯ<br> ТА РЕАБІЛІТАЦІЇ</h2>
-                <h3 class="means__subtitle text-right">які забезпечують життя з альтернативою</h3>
-                <div class="means__block">
-                    <a href="./technical-means-of-rehabilitation.html" class="mean" target="_blank">
+                <h2 class="devices__title title text-right">ДОПОМІЖНІ ЗАСОБИ ФУНКЦІОНУВАННЯ<br> ТА РЕАБІЛІТАЦІЇ</h2>
+                <h3 class="devices__subtitle text-right">які забезпечують життя з альтернативою</h3>
+                <div class="devices__block">
+                    <a href="./technical-means-of-rehabilitation.html" class="device" target="_blank">
                         <div class="mean__description">
-                            <div class="mean__icon">
+                            <div class="device__icon">
                                 <img src="./images/leaf-green.svg" alt="технічні засоби
                                 реабілітації іконка">
                             </div>
-                            <h4 class="mean__title">технічні засоби
+                            <h4 class="device__title">технічні засоби
                                 реабілітації</h4>
                         </div>
                     </a>
-                    <a href="#" class="mean" target="_blank">
-                        <div class="mean__description">
-                            <div class="mean__icon">
+                    <a href="#" class="device" target="_blank">
+                        <div class="device__description">
+                            <div class="device__icon">
                                 <img src="./images/leaf-yellow.svg" alt="засоби альтернативноЇ і додаткової комунікації іконка">
                             </div>
-                            <h4 class="mean__title">засоби альтернативноЇ і додаткової комунікації</h4>
+                            <h4 class="device__title">засоби альтернативноЇ і додаткової комунікації</h4>
                         </div>
                     </a>
-                    <a href="#" class="mean" target="_blank">
-                        <div class="mean__description">
-                            <div class="mean__icon">
+                    <a href="#" class="device" target="_blank">
+                        <div class="device__description">
+                            <div class="device__icon">
                                 <img src="./images/leaf-blue.svg" alt="допоміжні засоби функціонування іконка">
                             </div>
-                            <h4 class="mean__title">допоміжні засоби функціонування</h4>
+                            <h4 class="device__title">допоміжні засоби функціонування</h4>
                         </div>
                     </a>
                 </div>
             </div>
         </section>
-        <section class="help scroll-opacity">
+        <section class="help scroll-opacity" id="help">
             <div class="container">
                 <h2 class="hepl__title title">як допомагаємо?</h2>
                 <div class="help__container">
@@ -163,19 +169,19 @@
                 </div>
             </div>
         </section>
-        <section class="project scroll-opacity">
+        <section class="project scroll-opacity" id="project">
             <div class="project__container container">
+                <h2 class="project__title title">Виконані проєкти</h2>
+                <h4 class="project__subtitle">Запит</h4>
                 <div class="project__banner">
                     <img src="./images/project.jpg" class="project__banner-img hover-scale" alt="тренажер для ходьби фото">
                 </div>
                 <div class="project__content">
-                    <h2 class="project__title title">Виконані проєкти</h2>
-                    <h4 class="project__subtitle">Запит</h4>
                     <p class="project__text">До нашої громадської організації звернулась Людмила Коваль, яка дуже хотіла для синочка тренажер для ходьби</p>
-                    <button class="project__btn btn-hover">Читати відгук</button>
-                    <a class="project__btn-more">Інші проєкти
-                    <span class="btn-arrow"></span></a>
                 </div>
+                <button class="project__btn btn-hover">Читати відгук</button>
+                <a class="project__btn-more">Інші проєкти
+                    <span class="btn-arrow"></span></a>
             </div>
         </section>  
         <section class="team scroll-opacity">
@@ -337,6 +343,7 @@
         </div>
     </footer>
     <script src="./scripts/scroll-animation.js"></script>
+    <script src="./scripts/burger-menu.js"></script>
 
 </body>
 </html>
