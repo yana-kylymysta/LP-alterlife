@@ -143,7 +143,26 @@ footer {
     transition: 0.3s;
 }
 
-.menu__item a:hover,
+.menu__item a:after {
+    content: "";
+    -webkit-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    transform: scaleX(0);
+    display: block;
+    background-color: rgb(255, 213, 0);
+    width: 100%;
+    height: 2px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.menu__item a:hover:after {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
 .device:hover .device__title {
     font-weight: 600;
     color: rgba(0, 0, 0, 0.7)
@@ -203,10 +222,13 @@ footer {
     background: #FFD500;
     color: #005BBB;
 }
+
 .footer {
     background: url(../images/background.jpg);
 }
-.footer p, .footer label {
+
+.footer p,
+.footer label {
     font-size: 0.9rem;
 }
 
@@ -248,7 +270,7 @@ footer {
     height: 44px;
 }
 
-.footer__icon img{
+.footer__icon img {
     width: 100%;
 }
 
@@ -372,7 +394,7 @@ footer {
 
 @-webkit-keyframes tracking-in-expand-fwd-bottom {
     0% {
-        letter-spacing: -0.5em;
+        /* letter-spacing: -0.5em; */
         -webkit-transform: translateZ(-100px) translateY(500px);
         transform: translateZ(-100px) translateY(500px);
         opacity: 0;
@@ -391,7 +413,7 @@ footer {
 
 @keyframes tracking-in-expand-fwd-bottom {
     0% {
-        letter-spacing: -0.5em;
+        /* letter-spacing: -0.5em; */
         -webkit-transform: translateZ(-100px) translateY(500px);
         transform: translateZ(-100px) translateY(500px);
         opacity: 0;
@@ -430,14 +452,18 @@ footer {
     .header__container {
         position: relative;
     }
-      .head {
-       flex-wrap: wrap;
+
+    .head {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
         gap: 20px;
     }
+
     .head__buttons {
         width: 100%;
         gap: 10px;
     }
+
     .head__button {
         width: 100%;
         font-size: 0.8rem;
@@ -464,6 +490,8 @@ footer {
         left: 5px;
         height: 2px;
         width: 30px;
+        -webkit-transition: 0.3s;
+        -o-transition: 0.3s;
         transition: 0.3s;
     }
 
@@ -476,27 +504,37 @@ footer {
         top: 10px;
     }
 
-     .menu__icon-mob::after {
+    .menu__icon-mob::after {
         bottom: 10px;
-     }
-     .menu__icon-mob span {
+    }
+
+    .menu__icon-mob span {
         top: 50%;
+        -webkit-transform: scale(1) translate(0, -50%);
+        -ms-transform: scale(1) translate(0, -50%);
         transform: scale(1) translate(0, -50%);
-     }
+    }
 
     .menu__icon-mob.active span {
+        -webkit-transform: scale(0) translate(0, -50%);
+        -ms-transform: scale(0) translate(0, -50%);
         transform: scale(0) translate(0, -50%);
-      }
+    }
 
-      .menu__icon-mob.active::before {
+    .menu__icon-mob.active::before {
         top: 50%;
+        -webkit-transform: rotate(-45deg) translate(0, -50%);
+        -ms-transform: rotate(-45deg) translate(0, -50%);
         transform: rotate(-45deg) translate(0, -50%);
-      }
+    }
 
     .menu__icon-mob.active::after {
         bottom: 50%;
+        -webkit-transform: rotate(45deg) translate(0, 50%);
+        -ms-transform: rotate(45deg) translate(0, 50%);
         transform: rotate(45deg) translate(0, 50%);
-      }
+    }
+
     .menu {
         opacity: 0;
         position: fixed;
@@ -504,29 +542,36 @@ footer {
         left: 0;
         width: 100%;
         height: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         gap: 1.5rem;
         background-color: #fff;
         padding: 4.5rem 1rem 1rem 2rem;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
         transition: all 0.3s;
         z-index: 4;
         overflow: auto;
     }
+
     .menu.active-mob {
         opacity: 1;
         top: 0;
     }
-    
+
     .menu__item a {
-         font-size: 1rem;
+        font-size: 1rem;
     }
 
 }
 
 @media screen and (max-width: 768px) {
-    section, footer {
-        padding: 2rem 0 2rem 0;
-        }
-  
-}
 
+    section,
+    footer {
+        padding: 2rem 0 2rem 0;
+    }
+
+}

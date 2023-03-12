@@ -12,7 +12,7 @@
     padding: 2.5rem;
     margin-bottom: 2.5rem;
     position: relative;
-   
+
 }
 
 .mean::before {
@@ -51,7 +51,11 @@
 }
 
 .mean__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     gap: 3rem;
     margin: 0 0 0 12rem;
@@ -61,7 +65,9 @@
     width: 100%;
     max-width: 150px;
     height: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: center;
     object-position: center;
 }
 
@@ -69,14 +75,14 @@
     color: #000
 }
 
-.mean__list, 
+.mean__list,
 .mean__item {
     position: relative;
     max-height: 0;
     overflow: hidden;
     -webkit-transition: 0.5s;
-    -o-transition:  0.5s;
-    transition:  0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
 }
 
 .mean.active .mean__list {
@@ -88,6 +94,8 @@
 }
 
 .mean__breadcrumbs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
     margin-bottom: 2rem;
@@ -98,13 +106,12 @@
     color: #5F5B5B;
 }
 
-@media screen and (max-width: 768px) {   
-        .mean__class,
-        .mean__subclass,
-        .mean__section,
-        .mean__dropdowm,
-        .mean__item {
-            margin-left: 0;
-        }
-
+@media screen and (max-width: 768px) {
+    .mean__class,
+    .mean__subclass,
+    .mean__section,
+    .mean__dropdowm,
+    .mean__item {
+        margin-left: 0;
+    }
 }
